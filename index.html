@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Owen Westfold</title>
+<meta name="description" content="Owen Westfold — mathematician working on the foundations of singular learning theory and its applications to neural networks.">
+
+<!--
+  PLACEHOLDER LINKS — replace each href below with the URL of your uploaded file:
+    • CV ................... href="cv.pdf"
+    • V-filtration note .... href="notes/state-density-v-filtration.pdf"
+    • Thesis .............. href="https://minerva-access.unimelb.edu.au"  (swap in the actual record URL)
+    • Other notes (×4) .... href="notes/*.pdf"
+  Everything else on the page is plain text.
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#ffffff;
+    --ink:#1b1b1b;
+    --muted:#6f6f6f;
+    --faint:#8c8c8c;
+    --rule:#e7e7e3;
+    --link:#1a4a86;
+    --link-underline:rgba(26,74,134,0.32);
+    --link-hover:#123561;
+    --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+    --sans:"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --measure:42rem;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html{ -webkit-text-size-adjust:100%; }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--serif);
+    font-size:1.0625rem;
+    line-height:1.62;
+    font-feature-settings:"kern" 1;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  .page{
+    max-width:var(--measure);
+    margin:0 auto;
+    padding:5rem 1.5rem 4rem;
+  }
+
+  a{
+    color:var(--link);
+    text-decoration:underline;
+    text-decoration-thickness:.06em;
+    text-underline-offset:.14em;
+    text-decoration-color:var(--link-underline);
+    transition:color .15s ease, text-decoration-color .15s ease;
+  }
+  a:hover{ color:var(--link-hover); text-decoration-color:currentColor; }
+  a:focus-visible{ outline:2px solid var(--link); outline-offset:3px; border-radius:2px; }
+
+  /* Header */
+  header{
+    padding-bottom:1.6rem;
+    border-bottom:1px solid var(--rule);
+    margin-bottom:1.9rem;
+  }
+  .name{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:2.15rem;
+    line-height:1.08;
+    letter-spacing:-.015em;
+    margin:0 0 1rem;
+  }
+  .contact{
+    font-family:var(--sans);
+    font-size:.82rem;
+    line-height:1.85;
+    color:var(--muted);
+    margin:0;
+  }
+  .contact .label{
+    display:inline-block;
+    width:3.1rem;
+    color:var(--faint);
+    font-weight:500;
+    letter-spacing:.02em;
+  }
+
+  /* Intro */
+  .intro{
+    font-size:1.09rem;
+    margin:0;
+  }
+
+  /* Sections */
+  main > section{
+    border-top:1px solid var(--rule);
+    padding-top:2.3rem;
+    margin-top:2.3rem;
+  }
+  h2{
+    font-family:var(--sans);
+    font-size:.72rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.14em;
+    color:var(--faint);
+    margin:0 0 1.1rem;
+  }
+
+  p{ margin:0 0 1rem; }
+  p:last-child{ margin-bottom:0; }
+
+  .meta{
+    font-style:italic;
+    color:var(--muted);
+    margin-bottom:1rem;
+  }
+  .meta a{ font-style:normal; }
+
+  em, i{ font-style:italic; }
+  strong{ font-weight:600; }
+
+  /* Lists */
+  ul{ list-style:none; margin:0; padding:0; }
+  li{
+    position:relative;
+    padding-left:1.15rem;
+    margin:0 0 .6rem;
+    line-height:1.5;
+  }
+  li:last-child{ margin-bottom:0; }
+  li::before{
+    content:"–";
+    position:absolute;
+    left:0;
+    color:var(--faint);
+  }
+  .entries li{ margin-bottom:.7rem; }
+  .date{
+    font-family:var(--sans);
+    font-size:.82rem;
+    font-weight:500;
+    color:var(--muted);
+    margin-right:.15rem;
+  }
+
+  /* Footer */
+  footer{
+    margin-top:3rem;
+    padding-top:1.6rem;
+    border-top:1px solid var(--rule);
+    font-family:var(--sans);
+    font-size:.78rem;
+    letter-spacing:.02em;
+    color:var(--faint);
+  }
+
+  @media (max-width:640px){
+    .page{ padding:3rem 1.2rem 3rem; }
+    .name{ font-size:1.85rem; }
+    body{ font-size:1.02rem; }
+    .intro{ font-size:1.04rem; }
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{ transition:none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1 class="name">Owen Westfold</h1>
+    <p class="contact">
+      <span class="label">Email</span> <a href="mailto:owenwestfold@gmail.com">owenwestfold [at] gmail.com</a><br>
+      <span class="label">CV</span> <a href="cv.pdf">Here</a>
+    </p>
+  </header>
+
+  <main>
+    <p class="intro">
+      I am a mathematician and applied researcher, transitioning to AI alignment. My background is in
+      algebraic geometry, singularity theory and geometric representation theory, and I am currently
+      interested in Singular Learning Theory and its applications to neural networks.
+    </p>
+
+    <section aria-labelledby="slt">
+      <h2 id="slt">Singular Learning Theory</h2>
+      <p>
+        Watanabe's Singular Learning Theory is a mathematical theory of Bayesian statistical learning,
+        general enough to apply to singular models such as neural networks. When studying a model's
+        asymptotics, the learning coefficient (a.k.a. real log canonical threshold) takes the place of
+        parameter counting, leading to useful information criteria such as the WAIC and WBIC.
+      </p>
+      <p>
+        A core object of the theory, and key to the interpretation of the learning coefficient in terms
+        of volume scaling, is the state-density function. I wrote a note —
+        <a href="notes/state-density-v-filtration.pdf"><em>The asymptotic expansion of the state-density
+        function via the V-filtration</em></a> — which derives its asymptotic expansion directly from the
+        theory of D-modules.
+      </p>
+    </section>
+
+    <section aria-labelledby="rethinkx">
+      <h2 id="rethinkx">RethinkX</h2>
+      <p>
+        Research fellow since 2023. RethinkX is an independent research organisation studying
+        technology-driven disruption.
+      </p>
+      <ul>
+        <li>Technical advice on the trajectory of AI capabilities.</li>
+        <li>Probabilistic forecasting of technology costs using Bayesian methods (ARIMA models in Stan).</li>
+        <li>Agent-based modelling of the macroeconomy to assess the effect of AI and robotics on the labour market.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="phd">
+      <h2 id="phd">PhD</h2>
+      <p class="meta">University of Melbourne, 2022. Supervised by Daniel Murfet. <a href="https://minerva-access.unimelb.edu.au">Thesis</a></p>
+      <p>
+        My thesis classified the finite-dimensional irreducible representations of the subregular finite
+        W-algebras in simply-laced type, drawing on singularity theory, the representation theory of
+        nilpotent orbits, and the theory of D-modules. The problem was motivated by the Landau–Ginzburg /
+        Conformal Field Theory correspondence.
+      </p>
+    </section>
+
+    <section aria-labelledby="publications">
+      <h2 id="publications">Publications</h2>
+      <ul class="entries">
+        <li>
+          O. Colman, A. Ghitza, N. Ryan. <em>Analytic evaluation of Hecke eigenvalues for Siegel modular
+          forms of degree two.</em> ANTS XIII, Proceedings of the 13th Algorithmic Number Theory Symposium,
+          Open Book Series <strong>2</strong>, No. 1 (2019), 207–220. (Published under my former surname, Colman.)
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="notes">
+      <h2 id="notes">Other notes</h2>
+      <ul>
+        <li><a href="notes/derived-categories.pdf">Derived categories and derived functors</a></li>
+        <li><a href="notes/sheaves-locally-compact.pdf">Sheaves on locally compact spaces</a></li>
+        <li><a href="notes/hodge-heat-kernel.pdf">Hodge theory via the heat kernel</a></li>
+        <li><a href="notes/masters-thesis.pdf">Master's thesis</a> (University of Melbourne, 2018)</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="conferences">
+      <h2 id="conferences">Conferences</h2>
+      <ul>
+        <li>The Mathematics of Conformal Field Theory II — ANU, Canberra (2021)</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="talks">
+      <h2 id="talks">Talks</h2>
+      <ul class="entries">
+        <li><span class="date">May 2022</span> — <em>Quantising the nilpotent cone.</em> LG/CFT Seminar, Melbourne.</li>
+        <li><span class="date">February 2022</span> — <em>Finite W-algebras and the McKay correspondence.</em> LG/CFT Seminar, Melbourne.</li>
+        <li><span class="date">April 2021</span> — <em>The Springer resolution in type A.</em> LG/CFT Seminar, Melbourne.</li>
+        <li><span class="date">April 2021</span> — <em>Kleinian singularities and Slodowy slices.</em> LG/CFT Seminar, Melbourne.</li>
+        <li><span class="date">March 2021</span> — <em>Introduction to affine varieties.</em> LG/CFT Seminar, Melbourne.</li>
+        <li><span class="date">October 2020</span> — <em>What is Hodge theory?</em> What is…? Seminar (online).</li>
+        <li><span class="date">December 2019</span> — <em>DG Lie algebras and deformation theory.</em> Topology Student Seminar, Melbourne.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    Owen Westfold · Melbourne, Australia
+  </footer>
+
+</div>
+</body>
+</html>
